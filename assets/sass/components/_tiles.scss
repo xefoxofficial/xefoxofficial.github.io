@@ -245,7 +245,7 @@
 		}
 
 		@include breakpoint('<=xsmall') {
-			$gutter: _size(gutter) * 0.5;
+			$gutter: _size(gutter) * 0'.5;
 
 			margin: 0;
 
