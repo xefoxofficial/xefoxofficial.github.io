@@ -2,7 +2,7 @@
 
 
 // Settings
-var particleCount = 40,
+var particleCount = 80,
 	flareCount = 10,
 	motion = 0.05,
 	tilt = 0.05,
@@ -11,7 +11,7 @@ var particleCount = 40,
 	particleSizeMultiplier = 0.5,
 	flareSizeBase = 100,
 	flareSizeMultiplier = 100,
-	lineWidth = 1,
+	lineWidth = 3,
 	linkChance = 75, // chance per frame of link, higher = smaller chance
 	linkLengthMin = 5, // min linked vertices
 	linkLengthMax = 7, // max linked vertices
@@ -26,7 +26,7 @@ var particleCount = 40,
 	renderLinks = true,
 	renderMesh = false,
 	flicker = true,
-	flickerSmoothing = 15, // higher = smoother flicker
+	flickerSmoothing = 50, // higher = smoother flicker
 	blurSize = 0,
 	orbitTilt = true,
 	randomMotion = true,
