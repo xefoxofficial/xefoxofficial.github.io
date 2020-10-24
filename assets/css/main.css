@@ -29,6 +29,8 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+	/* Splash */
+
 body {
 	line-height: 1;
 }
@@ -99,7 +101,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		background: #f123f122;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2618,7 +2620,7 @@ input, select, textarea {
 					height: 100%;
 					opacity: 1.0;
 					z-index: 1;
-					opacity: 0.8;
+					opacity: 0.6;
 				}
 
 				.tiles article > .image:after {
@@ -3326,9 +3328,3 @@ input, select, textarea {
 			}
 
 		}
-/* Splash */
-canvas {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-}
