@@ -722,7 +722,13 @@ html:not(.touchevents) .gallery-caption:empty {
 .gallery {
   font-family: "Montserrat", "HelveticaNeueLTStd", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   width: 100%;
-  display: grid;
+  -moz-column-count: 0;
+  -moz-column-gap: 0;
+  -webkit-column-count: 0;
+  -webkit-column-gap: 0;
+  column-count: 5;
+  column-gap: 0;
+  width: 100%;
   grid-template-rows: flow;
   grid-auto-flow: dense;
 }
@@ -756,9 +762,13 @@ html:not(.touchevents) .gallery-caption:empty {
   position: relative;
   background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
+
+  padding: max(5px,1%);
 }
+
 .gallery-item img, .gallery-item a {
-  display: block;
+
+  width: 1000%;
 }
 .vertical.gallery-item {
   grid-row: span 2;
@@ -768,7 +778,7 @@ html:not(.touchevents) .gallery-caption:empty {
 }
 
 .gallery-item a {
-  display: block;
+  width: 1000%;
 }
 
 [class*=list] .gallery-caption, .gallery-size-thumbnail .gallery-caption {
