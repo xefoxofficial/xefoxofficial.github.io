@@ -3755,14 +3755,6 @@ ol li + li, ul li + li {
   text-decoration: underline;
 }
 
-.container, body:not(.has-gallery):not(.single-format-gallery):not(.page-template-gallery) [id=wrapper], .single-format-gallery [id=sidebar], .page-template-gallery [id=sidebar] {
-  max-width: 100rem;
-  padding-left: calc(.75rem + 1.25vw);
-  padding-right: calc(.75rem + 1.25vw);
-  margin-left: auto;
-  margin-right: auto;
-}
-
 body {
   display: -webkit-box;
   display: flex;
@@ -3912,21 +3904,7 @@ body {
   text-align: center;
   position: relative;
 }
-[id=footer] .container {
-  padding: calc((.75rem + 1.25vw)*2) 0;
-  min-height: 100%;
-  box-sizing: border-box;
-}
-[id=footer] .container:after {
-  left: auto;
-  right: calc(.75rem + 1.25vw);
-}
-[id=footer] .container > * {
-  display: block;
-}
-[id=footer] .container > * + * {
-  margin-top: calc(.75rem + 1.25vw);
-}
+
 [id=footer] .footer-title {
   font-weight: 600;
   font-size: 1.5em;
@@ -3935,48 +3913,12 @@ body {
   text-transform: uppercase;
   font-size: 0.75em;
 }
-[id=footer] .container {
-  overflow: hidden;
-  position: relative;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-pack: center;
-          justify-content: center;
-}
-[id=footer] .container:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: url("images/ui/target.svg") no-repeat left top, url("images/ui/target.svg") no-repeat right top, url("images/ui/target.svg") no-repeat left bottom, url("images/ui/target.svg") no-repeat right bottom;
-  margin: 0 -16px -16px;
-  z-index: -1;
-}
+
 .custom-background [id=footer] {
   height: 100vh;
   overflow: visible;
 }
-.custom-background [id=footer] .container {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-}
-.custom-background [id=footer] .container:before {
-  margin: calc(.75rem + 1.25vw);
-  background-image: url("http://dev.mobilemarkup.com/calibration/wp-content/themes/calibration/assets/images/ui/target-background.svg");
-  background-size: contain;
-  background-position: center;
-}
-.custom-background [id=footer] .container > *:first-child {
-  margin-top: auto !important;
-}
+
 [id=footer].background--dark, .background--dark [id=footer] {
   color: white;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
