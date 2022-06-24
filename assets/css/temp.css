@@ -1,5 +1,11 @@
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+  background-color: #17182f;
+}
+
 canvas {
   display: block;
-  width: 100vw;
-  height: 100vh;
+  vertical-align: bottom;
 }
