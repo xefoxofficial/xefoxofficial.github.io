@@ -4037,7 +4037,6 @@ html:not(.touchevents) .gallery-caption:empty {
   -moz-column-gap: 0;
   -webkit-column-count: 0;
   -webkit-column-gap: 0;
-  column-count: 5;
   column-gap: 0;
   width: 100%;
   grid-template-rows: flow;
@@ -4046,26 +4045,31 @@ html:not(.touchevents) .gallery-caption:empty {
 @media (max-width: 639px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
+    column-count: 2;
   }
 }
 @media (min-width: 640px) and (max-width: 1019px) {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
+    column-count: 2;
   }
 }
-@media (1260px-px: 1020px) {
+@media (min-width: 1020px) and (max-width: 1259px) {
   .gallery {
     grid-template-columns: repeat(4, 1fr);
+    column-count: 3;
   }
 }
 @media (min-width: 1260px) and (max-width: 1599px) {
   .gallery {
     grid-template-columns: repeat(5, 1fr);
+    column-count: 4;
   }
 }
 @media (min-width: 1600px) {
   .gallery {
     grid-template-columns: repeat(6, 1fr);
+    column-count: 5;
   }
 }
 
